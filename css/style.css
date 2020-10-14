@@ -1,3 +1,5 @@
+@import '../fonts/stylesheet.css';
+
 body {
   margin: 0;
   padding: 0;
@@ -84,8 +86,10 @@ ul {
 }
 .main-title {
   position: relative;
+  font-family: 'Druk Cyr';
   display: inline-block;
   font-size: 30px;
+  font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;
@@ -441,6 +445,7 @@ ul {
 /* program */
 .program {
   position: relative;
+  margin-bottom: 120px;
 }
 .program-title {
   text-align: center;
@@ -633,4 +638,107 @@ ul {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+/* spekers */
+.spekers {
+  margin-bottom: 120px;
+}
+.spekers-title {
+  text-align: center;
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0 0 40px 0;
+}
+.spekers-block {
+  position: relative;
+  width: 720px;
+  margin: 0 auto;
+}
+.spekers-block img {
+  position: relative;
+  display: block;
+  width: 100%;
+  transform: translateX(-80px);
+  z-index: 2;
+}
+.spekers-block__name {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 70px;
+  line-height: 0.5;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  z-index: 1;
+}
+.spekers-block__text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  z-index: 3;
+}
+.spekers-list__item {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  z-index: 3;
+}
+.spekers-list__item span {
+  font-weight: 700;
+}
+.speker-first-item {
+  position: absolute;
+  top: 280px;
+  left: -140px;
+  width: 380px;
+}
+.speker-second-item {
+  position: absolute;
+  top: 500px;
+  left: -60px;
+  width: 300px;
+}
+.speker-three-item {
+  position: absolute;
+  top: 280px;
+  right: -180px;
+  width: 380px;
+}
+.speker-four-item {
+  position: absolute;
+  top: 580px;
+  right: -40px;
+  width: 300px;
+}
+/* footer */
+.footer {
+  margin-bottom: 80px;
+} 
+.footer-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer-list li {
+  margin-bottom: 40px;
+  padding: 0 40px;
+}
+.footer-text,
+.footer-list__link {
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  color: #ffffff;
+}
+.footer-text a {
+  font-weight: 600;
+  color: #ffffff;
 }

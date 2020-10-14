@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>13-10</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -18,13 +19,13 @@
       <nav class="nav">
         <ul class="nav-list">
           <li>
-            <a href="#" class="nav-list__link">О занятиях</a>
+            <a href="#statistics" class="nav-list__link anchors">О занятиях</a>
           </li>
           <li>
-            <a href="#" class="nav-list__link">О спикере</a>
+            <a href="#spekers" class="nav-list__link anchors">О спикере</a>
           </li>
           <li>
-            <a href="#" class="nav-list__link">Программа</a>
+            <a href="#program" class="nav-list__link anchors">Программа</a>
           </li>
         </ul>
       </nav>
@@ -57,106 +58,133 @@
           <li>
             <a href="#" class="main-list__message viber"> Viber </a>
           </li>
-          <li>
+          <li class="mobil-timer">
             <div class="timer-wrapper">
-                <div id="countdown" class="countdown timer">
-                    <div class="countdown-number">
-                        <span class="days countdown-time"></span>
-                        <span class="countdown-text">Дни</span>
-                    </div>
-                    <span class="timer-line">:</span>
-                    <div class="countdown-number">
-                        <span class="hours countdown-time"></span>
-                        <span class="countdown-text">Часы</span>
-                    </div>
-                    <span class="timer-line">:</span>
-                    <div class="countdown-number">
-                        <span class="minutes countdown-time"></span>
-                        <span class="countdown-text">Мин</span>
-                    </div>
-                    <span class="timer-line">:</span>
-                    <div class="countdown-number">
-                        <span class="seconds countdown-time"></span>
-                        <span class="countdown-text">Сек</span>
-                    </div>
+              <div id="countdown" class="countdown timer">
+                <div class="countdown-number">
+                  <span class="days countdown-time"></span>
+                  <span class="countdown-text">Дни</span>
                 </div>
+                <span class="timer-line">:</span>
+                <div class="countdown-number">
+                  <span class="hours countdown-time"></span>
+                  <span class="countdown-text">Часы</span>
+                </div>
+                <span class="timer-line">:</span>
+                <div class="countdown-number">
+                  <span class="minutes countdown-time"></span>
+                  <span class="countdown-text">Мин</span>
+                </div>
+                <span class="timer-line">:</span>
+                <div class="countdown-number">
+                  <span class="seconds countdown-time"></span>
+                  <span class="countdown-text">Сек</span>
+                </div>
+              </div>
+            </div>
           </li>
           <li>
             <a href="#" class="main-list__message facebook">Facebook</a>
           </li>
         </ul>
-        <p class="main-block__text-botom">Ваши данные не будут переданы 3-м лицам</p>
+        <p class="main-block__text-botom">
+          Ваши данные не будут переданы 3-м лицам
+        </p>
       </div>
       <div class="main-text-reservation">
-          Бронируя участие, получите серию подготовительных видео уроков
-          <span>Бесплатно</span>
+        Бронируя участие, получите серию подготовительных видео уроков
+        <span>Бесплатно</span>
       </div>
     </section>
-    <section class="statistics container">
-        <h2 class="statistics-title"><span>FACEBOOK</span> ЭТО САМАЯ БОЛЬШАЯ <br> СОЦИАЛЬНАЯ СЕТЬ В МИРЕ</h2>
-        <p class="statistics-text">Не пользоваться этим, Преступление</p>
-        <ul class="statistics-list">
-            <li class="statistics-list__item">
-                <h2 class="statistics-list__title text-yellow">2.41 млрд</h2>
-                <p class="statistics-list__text">Ежемесячно <span>активных</span> пользователей</p>
-            </li>
-            <li class="statistics-list__item">
-                <h2 class="statistics-list__title">300 млн</h2>
-                <p class="statistics-list__text">Пользователей соцсети <span>смотрят Stories ежедневно</span> </p>
-            </li>
-            <li class="statistics-list__item">
-                <h2 class="statistics-list__title text-blue">38 минут</h2>
-                <p class="statistics-list__text"><span>В день в среднем</span> проводят пользователи в сети</p>
-            </li>
-            <li class="statistics-list__item">
-                <h2 class="statistics-list__title text-blue">Facebook</h2>
-                <p class="statistics-list__text"> <span>Это экосистема 4-х платформ:</span> </p>
-                <p class="statistics-list__text-smoll">Facebook, Instagram, WhatsApp, <br>
-                  Audience Networkd</p>
-            </li>
-            <li class="statistics-list__item">
-                <h2 class="statistics-list__title text-yellow">74%</h2>
-                <p class="statistics-list__text">Пользователей <span> ежедневно, заходят</span> на Facebook</p>
-            </li>
-            <li class="statistics-list__item">
-                <h2 class="statistics-list__title">ТОП 3</h2>
-                <p class="statistics-list__text"> <span>Самых посещаемых сайтов в мире</span></p>
-            </li>
-        </ul>
+    <section class="statistics container" id="statistics">
+      <h2 class="statistics-title">
+        <span>FACEBOOK</span> ЭТО САМАЯ БОЛЬШАЯ <br />
+        СОЦИАЛЬНАЯ СЕТЬ В МИРЕ
+      </h2>
+      <p class="statistics-text">Не пользоваться этим, Преступление</p>
+      <ul class="statistics-list">
+        <li class="statistics-list__item">
+          <h2 class="statistics-list__title text-yellow">2.41 млрд</h2>
+          <p class="statistics-list__text">
+            Ежемесячно <span>активных</span> пользователей
+          </p>
+        </li>
+        <li class="statistics-list__item">
+          <h2 class="statistics-list__title">300 млн</h2>
+          <p class="statistics-list__text">
+            Пользователей соцсети <span>смотрят Stories ежедневно</span>
+          </p>
+        </li>
+        <li class="statistics-list__item">
+          <h2 class="statistics-list__title text-blue">38 минут</h2>
+          <p class="statistics-list__text">
+            <span>В день в среднем</span> проводят пользователи в сети
+          </p>
+        </li>
+        <li class="statistics-list__item">
+          <h2 class="statistics-list__title text-blue">Facebook</h2>
+          <p class="statistics-list__text">
+            <span>Это экосистема 4-х платформ:</span>
+          </p>
+          <p class="statistics-list__text-smoll">
+            Facebook, Instagram, WhatsApp, <br />
+            Audience Networkd
+          </p>
+        </li>
+        <li class="statistics-list__item">
+          <h2 class="statistics-list__title text-yellow">74%</h2>
+          <p class="statistics-list__text">
+            Пользователей <span> ежедневно, заходят</span> на Facebook
+          </p>
+        </li>
+        <li class="statistics-list__item">
+          <h2 class="statistics-list__title">ТОП 3</h2>
+          <p class="statistics-list__text">
+            <span>Самых посещаемых сайтов в мире</span>
+          </p>
+        </li>
+      </ul>
     </section>
     <section class="blue-block">
       <div class="blue-block-bg-left"></div>
-      <h2 class="blue-block__title"> <span>Facebook и Instagram</span> <br>
-        это огромная площадка клиентов<br>
+      <h2 class="blue-block__title">
+        <span>Facebook и Instagram</span> <br />
+        это огромная площадка клиентов<br />
         для любых видов бизнеса.
       </h2>
       <a href="#" class="blue-block__btn">Но умеет ли бизнес работать с ней?</a>
       <div class="blue-block-bg-right"></div>
     </section>
-    <section class="program container">
-      <h2 class="program-title">ЧТО ВЫ УЗНАЕТЕ <br>  НА ОТКРЫТЫХ ОНЛАЙН УРОКАХ</h2>
+    <section class="program container" id="program">
+      <h2 class="program-title">
+        ЧТО ВЫ УЗНАЕТЕ <br />
+        НА ОТКРЫТЫХ ОНЛАЙН УРОКАХ
+      </h2>
       <div class="program-block">
-        <h3 class="program-block__title">Базовые принципы без знаний которых, критически важно
-          не запускать рекламу в <span>facebook и instagram</span>
+        <h3 class="program-block__title">
+          Базовые принципы без знаний которых, критически важно не запускать
+          рекламу в <span>facebook и instagram</span>
           <div class="program-block__date">
             <div class="program-block__date-number">29</div>
             <div class="program-block__date-mouth">Сентября</div>
             <span class="program-block__date-time">20:00 Киев / Мск</span>
-          </div> 
+          </div>
         </h3>
         <ul class="program-list">
-            <li class="program-list__first">
-              Как работает внутренний алгоритм рекламной сети facebookи instagram
-            </li>
-            <li class="program-list__first">
-              Узнаете о ключевых показателях рекламы, которые влияют, когда ваши рекламные объявления участвуют в аукционе
-            </li>
-            <li class="program-list__first">
-              Почему просьба подписаться ваших друзей на вашу бизнес страницу убивает ваши рекламные кампании
-            </li>
-            <li class="program-list__first">
-              4 критических ошибок рекламодателей facebook и instagram
-            </li>
+          <li class="program-list__first">
+            Как работает внутренний алгоритм рекламной сети facebookи instagram
+          </li>
+          <li class="program-list__first">
+            Узнаете о ключевых показателях рекламы, которые влияют, когда ваши
+            рекламные объявления участвуют в аукционе
+          </li>
+          <li class="program-list__first">
+            Почему просьба подписаться ваших друзей на вашу бизнес страницу
+            убивает ваши рекламные кампании
+          </li>
+          <li class="program-list__first">
+            4 критических ошибок рекламодателей facebook и instagram
+          </li>
         </ul>
       </div>
       <div class="program-block">
@@ -167,41 +195,87 @@
             <div class="program-block__date-number">30</div>
             <div class="program-block__date-mouth">Сентября</div>
             <span class="program-block__date-time">20:00 Киев / Мск</span>
-          </div> 
+          </div>
         </h3>
         <ul class="program-list">
-            <li class="program-list__second">
-              Формируем портрет целевой аудитории
-            </li>
-            <li class="program-list__second">
-              Коммуникационная стратегия в подговке к запуску рекламных кампаний
-            </li>
-            <li class="program-list__second">
-              Статистика аудитории, или как понять что делает ваша ЦА под микроскопом
-            </li>
-            <li class="program-list__second">
-              Разбор бюджетной стратегии тестирования рекламных обьвлений
-            </li>
-            <li class="program-list__second">
-              Инструмент лексического анализа текста
-            </li>
-            <li class="program-list__second">
-              Пошаговая стратегия: Как снизить стоимость рекламы
-            </li>
+          <li class="program-list__second">
+            Формируем портрет целевой аудитории
+          </li>
+          <li class="program-list__second">
+            Коммуникационная стратегия в подговке к запуску рекламных кампаний
+          </li>
+          <li class="program-list__second">
+            Статистика аудитории, или как понять что делает ваша ЦА под
+            микроскопом
+          </li>
+          <li class="program-list__second">
+            Разбор бюджетной стратегии тестирования рекламных обьвлений
+          </li>
+          <li class="program-list__second">
+            Инструмент лексического анализа текста
+          </li>
+          <li class="program-list__second">
+            Пошаговая стратегия: Как снизить стоимость рекламы
+          </li>
         </ul>
       </div>
       <a href="#" class="program-btn">Принять участие</a>
     </section>
-
-
-
-
-
-
-
-
-
-    <div style="height: 400px;"></div>
+    <section class="spekers container" id="spekers">
+      <h2 class="spekers-title">КТО ВЕДЕТ ОТКРЫТЫЕ ОНЛАЙН УРОКИ</h2>
+      <div class="spekers-block">
+        <div class="spekers-block__name">
+          Корнеев <br />
+          Владислав
+        </div>
+        <div class="spekers-block__text">Более 15 лет в бизнесе.</div>
+        <img src="img/spekers/speker.png" alt="Корнеев Владислав" />
+        <ul class="spekers-list">
+          <li class="spekers-list__item speker-first-item">
+            Бизнесмен, основатель проекта
+            <span>
+              “ProTargeting” - академия по Таргетированной рекламе facebook и
+              instagram.
+            </span>
+          </li>
+          <li class="spekers-list__item speker-second-item">
+            Создатель компании <span> FESKO Group </span> (сфера интересов трейд
+            маркетинг)
+          </li>
+          <li class="spekers-list__item speker-three-item">
+            В недавнем прошлом, участник арбитражной команды Facebook и
+            Instagram.
+            <span> Средний объем продаж 5000 лидов в сутки. </span> Гео:
+            Центральная и Восточная Европа, Азия, Южная Америка.
+          </li>
+          <li class="spekers-list__item speker-four-item">
+            <span>Управляющий рекламного агентства,</span>
+            каналы трафика: facebook и instagram, с
+            <span> ежемесячным бюджетом более 320 000$ </span>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="program-btn">Принять участие</a>
+    </section>
+    <footer class="footer container">
+      <ul class="footer-list">
+        <li>
+          <a href="#" class="footer-list__link">Условия оказания услуг</a>
+        </li>
+        <li>
+          <a href="#" class="footer-list__link">Политика конфинденциальности</a>
+        </li>
+        <li>
+          <a href="#" class="footer-list__link">Предупреждение</a>
+        </li>
+      </ul>
+      <p class="footer-text">
+        © Корнеев Владислав & ProTargeting. Все права защищены. Любое
+        копирование материалов разрешено только с согласия правообладателей. По
+        всем вопросам обращайтесь: <a href="mailto:info@protargeting.team">info@protargeting.team</a>
+      </p>
+    </footer>
     <script src="js/timer.js"></script>
+    <script src="js/anchors.js"></script>
   </body>
 </html>
