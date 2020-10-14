@@ -75,29 +75,39 @@
     align-items: center;
   }
   .footer-list li {
-      text-align: center;
+    text-align: center;
   }
 }
 @media (max-width: 760px) {
   .blue-block-bg-right,
   .blue-block-bg-left,
+  .main-top,
   nav,
   br {
     display: none;
   }
+  .header {
+    padding: 20px 0 40px 0;
+  }
+  .header-data {
+    display: block;
+    margin-top: 10px;
+  }
   .container {
     width: 90%;
-  }
-  .main-top {
-    justify-content: center;
   }
   .mian-top___time,
   .mian-top___date {
     margin-right: 0;
     white-space: nowrap;
+    text-align: center;
   }
-  .mian-top___date {
-    margin-right: 20px;
+  .mian-top___time {
+    box-shadow: none;
+    padding: 0;
+  }
+  .mian-top___time::before {
+    display: none;
   }
   .main-title {
     display: block;
@@ -121,6 +131,9 @@
   }
   .main-list li {
     width: 100%;
+  }
+  .main-list__message {
+    padding: 14px 0;
   }
   .mobil-timer {
     position: absolute;
@@ -188,56 +201,44 @@
     font-size: 16px;
   }
   .spekers-block__text {
-      font-size: 16px;
-      top: 48%;
-      white-space: nowrap;
+    position: static;
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+    transform: translate(0);
   }
 }
 @media (max-width: 380px) {
-    .main-text-reservation {
-        width: 280px;
-    }
-    .program-title,
-    .statistics-title {
-        font-size: 26px;
-    }
-    .blue-block__title {
-        font-size: 22px;
-    }
-    .blue-block__btn {
-        font-size: 14px;
-        width: 300px;
-    }
-    .program-block__title {
-        font-size: 22px;
-    }
-    .spekers-block__text {
-        top: 44%;
-    }
+  .main-text-reservation {
+    width: 280px;
+  }
+  .program-title,
+  .statistics-title {
+    font-size: 26px;
+  }
+  .blue-block__title {
+    font-size: 22px;
+  }
+  .blue-block__btn {
+    font-size: 14px;
+    width: 300px;
+  }
+  .program-block__title {
+    font-size: 22px;
+  }
 }
 @media (max-width: 330px) {
-    .main-top {
-        flex-direction: column;
-        align-items: center;
-    }
-    .mian-top___date {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-    .main-text-reservation {
-        width: 240px;
-        font-size: 14px;
-    }
-    .blue-block__btn {
-        width: 260px;
-    }
-    .spekers-title {
-        font-size: 24px;
-    }
-    .spekers-block__name {
-        font-size: 50px;
-    }
-    .spekers-block__text {
-        top: 40%;
-    }
+  .main-text-reservation {
+    width: 240px;
+    font-size: 14px;
+  }
+  .blue-block__btn {
+    width: 260px;
+  }
+  .spekers-title {
+    font-size: 24px;
+  }
+  .spekers-block__name {
+    font-size: 50px;
+  }
 }

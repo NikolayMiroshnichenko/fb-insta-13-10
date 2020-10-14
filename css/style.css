@@ -44,6 +44,9 @@ ul {
 .nav-list__link {
   color: #ffffff;
 }
+.header-data {
+  display: none;
+}
 /* MAIN */
 .main {
   position: relative;
