@@ -1,4 +1,4 @@
-@import '../fonts/stylesheet.css';
+@import "../fonts/stylesheet.css";
 
 body {
   margin: 0;
@@ -50,7 +50,7 @@ ul {
 /* MAIN */
 .main {
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 160px;
 }
 .main-top {
   display: flex;
@@ -89,9 +89,10 @@ ul {
 }
 .main-title {
   position: relative;
-  font-family: 'Druk Cyr';
+  font-family: "Druk Cyr";
+  line-height: 1.6;
   display: inline-block;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
@@ -105,13 +106,15 @@ ul {
   position: absolute;
   top: 30px;
   right: -50px;
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: bold;
   padding: 6px 18px;
   text-transform: none;
   background-color: #272527;
   color: #fff000;
   box-shadow: -8px 4px 40px 0px rgba(0, 24, 255, 0.2);
   transform: rotate(8deg);
+  font-family: "Raleway", sans-serif;
 }
 .main-text {
   font-weight: 600;
@@ -275,7 +278,9 @@ ul {
 .statistics-title {
   color: #ffffff;
   text-align: center;
-  font-size: 28px;
+  font-family: "Druk Cyr";
+  line-height: 1.6;
+  font-size: 24px;
   margin-bottom: 40px;
 }
 .statistics-title span {
@@ -284,6 +289,7 @@ ul {
 .statistics-text {
   text-align: center;
   color: #fff000;
+  font-weight: bold;
 }
 .statistics-list {
   display: flex;
@@ -393,8 +399,10 @@ ul {
 }
 .blue-block__title {
   text-align: center;
+  font-family: "Druk Cyr";
   color: #ffffff;
-  font-size: 30px;
+  font-size: 26px;
+  line-height: 1.6;
   text-transform: uppercase;
   margin: 0 0 50px 0;
 }
@@ -452,8 +460,10 @@ ul {
 }
 .program-title {
   text-align: center;
+  font-family: "Druk Cyr";
   color: #ffffff;
-  font-size: 30px;
+  font-size: 26px;
+  line-height: 1.6;
   margin: 0 0 40px 0;
 }
 .program-block__title {
@@ -649,10 +659,12 @@ ul {
 }
 .spekers-title {
   text-align: center;
+  font-family: "Druk Cyr";
+  line-height: 1.6;
   font-size: 28px;
   color: #ffffff;
   font-weight: 700;
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
 }
 .spekers-block {
   position: relative;
@@ -671,12 +683,14 @@ ul {
   top: 80px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 70px;
+  font-size: 90px;
+  font-family: 'Druk Cyr';
   line-height: 0.5;
   font-weight: 700;
   color: #ffffff;
   text-align: center;
   z-index: 1;
+  opacity: 0.8;
 }
 .spekers-block__text {
   position: absolute;
@@ -724,7 +738,7 @@ ul {
 /* footer */
 .footer {
   margin-bottom: 80px;
-} 
+}
 .footer-list {
   display: flex;
   justify-content: center;

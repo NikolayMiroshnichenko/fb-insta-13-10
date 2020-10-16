@@ -3,7 +3,7 @@
     width: 968px;
   }
   .main-title {
-    font-size: 24px;
+    font-size: 18px;
   }
   .statistics-list__item {
     width: 300px;
@@ -47,6 +47,9 @@
   .blue-block-bg-right,
   .blue-block-bg-left {
     width: 160px;
+  }
+  .blue-block__title {
+    font-size: 22px;
   }
   .program-block__title {
     padding: 40px 0 40px 150px;
@@ -150,6 +153,9 @@
   .main-text-reservation span {
     bottom: -24px;
   }
+  .statistics-title {
+    font-size: 20px;
+  }
   .statistics-list {
     margin-top: 80px;
   }
@@ -157,7 +163,7 @@
     width: 100%;
   }
   .blue-block__title {
-    font-size: 26px;
+    font-size: 20px;
   }
   .blue-block__btn {
     width: 320px;
@@ -165,6 +171,9 @@
   .blue-block__btn::before {
     width: 50px;
     height: 50px;
+  }
+  .program-title {
+    font-size: 22px;
   }
   .program-block__title {
     padding: 150px 0 40px 0;
@@ -183,6 +192,9 @@
   .program-list__second {
     width: 100%;
   }
+  .spekers-title {
+    font-size: 20px;
+  }
   .spekers-block {
     width: 100%;
   }
@@ -190,7 +202,7 @@
     transform: translateX(-40px);
   }
   .spekers-block__name {
-    font-size: 60px;
+    font-size: 50px;
     top: 40px;
   }
   .spekers-list {
@@ -214,10 +226,10 @@
   }
   .program-title,
   .statistics-title {
-    font-size: 26px;
+    font-size: 20px;
   }
   .blue-block__title {
-    font-size: 22px;
+    font-size: 18px;
   }
   .blue-block__btn {
     font-size: 14px;
@@ -225,6 +237,9 @@
   }
   .program-block__title {
     font-size: 22px;
+  }
+  .spekers-block__name {
+    font-size: 40px;
   }
 }
 @media (max-width: 330px) {
@@ -236,9 +251,9 @@
     width: 260px;
   }
   .spekers-title {
-    font-size: 24px;
+    font-size: 20px;
   }
   .spekers-block__name {
-    font-size: 50px;
+    font-size: 35px;
   }
 }
